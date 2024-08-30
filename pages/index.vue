@@ -7,7 +7,7 @@
       />
     </div>
     <div class="z-50 flex h-screen w-full flex-col items-center justify-center bg-transparent text-center">
-      <div class="blur-none">
+      <div class="z-50 rounded-lg bg-white p-8 blur-none">
         <p class="z-50 text-9xl font-black">
           The <span class="z-50 bg-gradient-to-r from-teal-300 via-sky-600 to-cyan-300 bg-clip-text font-sans text-transparent">Best</span> Rod
         </p>
@@ -36,7 +36,7 @@
       <div
         v-for="attribute in attributes"
         :key="attribute.name"
-        class="flex h-[576px] w-1/3 flex-row p-4"
+        class="flex h-[576px] flex-col p-4 md:w-1/3 md:flex-row"
       >
         <img
           src="/up.png"
@@ -47,7 +47,7 @@
             src="/straight.png"
             class="w-full"
           >
-          <div class="z-50 h-[540px] rounded-lg bg-white p-4 dark:bg-gray-800">
+          <div class="z-50 h-[540px] rounded-lg bg-white p-4 dark:bg-gray-950">
             <p class="text-2xl font-bold">
               {{ attribute.name }}
             </p>
@@ -67,6 +67,16 @@
       </div>
     </div>
     <ColorMode />
+    <div
+      :style="{ backgroundImage: 'url(\'rod.png\')', backgroundSize: '250px 250px' }"
+      class="z-50 flex h-[1000vh] w-full flex-col items-center  text-center"
+    >
+      <div class="z-50 mt-[50vh] rounded-lg bg-white p-8 blur-none">
+        <p class="z-50 text-9xl font-black">
+          The <span class="z-50 bg-gradient-to-r from-teal-300 via-sky-600 to-cyan-300 bg-clip-text font-sans text-transparent">Best</span> Rod
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
