@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="p-4">
     <div class="z-0">
       <div
         :style="{ backgroundImage: 'url(\'rod.png\')', backgroundSize: '250px 250px' }"
@@ -8,19 +8,19 @@
     </div>
     <div class="z-50 flex h-screen w-full flex-col items-center justify-center bg-transparent text-center">
       <div class="z-50 rounded-lg bg-white p-8 blur-none">
-        <p class="z-50 text-9xl font-black">
+        <p class="z-50 text-6xl font-black md:text-9xl">
           The <span class="z-50 bg-gradient-to-r from-teal-300 via-sky-600 to-cyan-300 bg-clip-text font-sans text-transparent">Best</span> Rod
         </p>
       </div>
     </div>
-    <div class="z-10 flex h-screen w-full flex-row justify-center">
-      <div class="flex w-1/2 flex-col">
+    <div class="z-10 flex h-screen w-full flex-col justify-center md:flex-row">
+      <div class="flex flex-col md:w-1/2">
         <img
           src="/rod.png"
           class="mx-auto size-96"
         >
       </div>
-      <div class="flex w-1/2 flex-col p-12 pl-0">
+      <div class="flex flex-col p-12 pl-0 md:w-1/2">
         <p class="text-5xl font-bold">
           Rod <span class="text-4xl text-gray-500 dark:text-gray-300">/rŏd/</span>
         </p>
@@ -32,11 +32,11 @@
         </p>
       </div>
     </div>
-    <div class="flex h-screen flex-row p-24">
+    <div class="flex flex-col px-0 py-24 md:h-screen md:flex-row md:px-24">
       <div
         v-for="attribute in attributes"
         :key="attribute.name"
-        class="flex h-[576px] flex-col p-4 md:w-1/3 md:flex-row"
+        class="flex h-[576px] flex-row px-0 py-4 md:w-1/3 md:px-4"
       >
         <img
           src="/up.png"
@@ -72,7 +72,7 @@
       class="z-50 flex h-[1000vh] w-full flex-col items-center  text-center"
     >
       <div class="z-50 mt-[50vh] rounded-lg bg-white p-8 blur-none">
-        <p class="z-50 text-9xl font-black">
+        <p class="z-50 text-6xl font-black md:text-9xl">
           The <span class="z-50 bg-gradient-to-r from-teal-300 via-sky-600 to-cyan-300 bg-clip-text font-sans text-transparent">Best</span> Rod
         </p>
       </div>
