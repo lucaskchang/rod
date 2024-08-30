@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   app: {
     head: {
       title: 'Bay Clock 3',
@@ -18,6 +19,7 @@ export default defineNuxtConfig({
   },
 
   css: ['@/assets/css/styles.scss'],
+
   modules: [
     '@nuxt/ui',
     '@nuxt/image',
@@ -27,9 +29,11 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
   ],
+
   colorMode: {
     classSuffix: '',
   },
+
   googleFonts: {
     families: {
       'Inter': true,
@@ -37,12 +41,16 @@ export default defineNuxtConfig({
       'Nunito': true,
     },
   },
+
   gtag: {
     id: 'G-QNLZ5NY7HH',
   },
+
   eslint: {
     config: {
       stylistic: true,
     },
   },
+
+  compatibilityDate: '2024-08-30',
 });
