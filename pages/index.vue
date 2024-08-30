@@ -92,16 +92,16 @@ const dimensions = computed(() => {
 
 const attributes = [
   {
-    name: 'Legality',
-    description: 'This rod was stolen from my roommate who is currently out of town.',
-  },
-  {
-    name: 'Grip',
-    description: 'This rod is equipped with a comfortable grip thanks to tape.',
-  },
-  {
     name: 'Material',
-    description: 'This rod is made of aluminum making it lightweight and durable.',
+    description: 'This rod is made of aluminum making it lightweight and durable and it has a comforable grip thanks to the tape wrapped around it.',
+  },
+  {
+    name: 'Size',
+    description: 'This rod is just the right size to wrap around your hand and hit someone with it. It\'s also easy to store away because of its compact size.',
+  },
+  {
+    name: 'Legality',
+    description: 'This rod was stolen from my roommate who is currently out of town. This makes it all the better because it is free and multipurpose.',
   },
 ];
 </script>
