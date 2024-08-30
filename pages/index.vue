@@ -2,12 +2,12 @@
   <div class="p-4">
     <div class="z-0">
       <div
-        :style="{ backgroundImage: 'url(\'rod.png\')', backgroundSize: '250px 250px' }"
+        :style="{ backgroundImage: 'url(\'rod.png\')', backgroundSize: `${dimensions}` }"
         class="fixed top-0 z-0 h-screen w-full blur"
       />
     </div>
     <div class="z-50 flex h-screen w-full flex-col items-center justify-center bg-transparent text-center">
-      <div class="z-50 rounded-lg bg-white p-8 blur-none">
+      <div class="z-50 rounded-lg bg-white p-8 blur-none dark:bg-gray-950">
         <p class="z-50 text-6xl font-black md:text-9xl">
           The <span class="z-50 bg-gradient-to-r from-teal-300 via-sky-600 to-cyan-300 bg-clip-text font-sans text-transparent">Best</span> Rod
         </p>
@@ -71,7 +71,7 @@
       :style="{ backgroundImage: 'url(\'rod.png\')', backgroundSize: '250px 250px' }"
       class="z-50 flex h-[1000vh] w-full flex-col items-center  text-center"
     >
-      <div class="z-50 mt-[50vh] rounded-lg bg-white p-8 blur-none">
+      <div class="z-50 mt-[50vh] rounded-lg bg-white p-8 blur-none dark:bg-gray-950">
         <p class="z-50 text-6xl font-black md:text-9xl">
           The <span class="z-50 bg-gradient-to-r from-teal-300 via-sky-600 to-cyan-300 bg-clip-text font-sans text-transparent">Best</span> Rod
         </p>
@@ -81,6 +81,15 @@
 </template>
 
 <script setup lang="ts">
+const { width } = useWindowSize();
+
+const dimensions = computed(() => {
+  if (width.value >= 768) {
+    return '250px 250px';
+  }
+  return '100px 100px';
+});
+
 const attributes = [
   {
     name: 'Legality',
