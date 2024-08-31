@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Bay Clock 3',
+      title: 'The Best Rod',
       htmlAttrs: {
         lang: 'en',
       },
